@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+body{
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, h7{
+    font-family: 'Inter', sans-serif;
+    color: #394889;
+    font-style: bold;
+    font-weight: 800;
+}
+
+.register{
+    font-size: 20px;
+}
+.form-control .registrationbox{
+    border-radius: 10px;
+}
+
+
+.form{
+    margin: 12vh;
+    padding: 5vh;
+    padding-left: 8vh;
+}
+
+hr{
+    width: 80%;
+}
+
+.navbar{
+    background-color: #FFB500;
+}
+.registration{
+    text-align: left;
+}
+
+.registration input {
+    width: 100%;
+  }
+
+  label .reg{
+    font-size: 15px;
+  }
+
+  .small-checkbox {
+    width: 20px;
+    height: 20px;
+  }
+.designside{
+    background-color: #FFB500;
+    width: 90%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bgpaws {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.reg-btn{
+    background-color: #FFB500;
+    border-radius: 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.reg-btn:hover {
+    border: 2px solid black;
+    background-color: #fbc949;
+}
+.reg-btn:focus{
+    border: 2px solid black;
+    background-color: #fbc949;
+}
+
+.logo{
+    height: 5.5vh;
+}
+
+.conlogo{
+    margin-left: 10.5vh;
+}
+
+.side-inner{
+   background-color: #FFB500;
+   width: 300px;
+   height: 100%;
+   left: 0;
+   z-index: 1001;
+   position: fixed;
+   opacity: 75%;
+   padding: 80px 30px 0 30px;
+}
+
+.side-inner .profile {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 40px;
+ 
+}
+
+.side-inner .profile img {
+    width: 200px;
+    border-radius: 50%; 
+    margin-bottom: 10px;
+}
+.side-inner .profile .name {
+    font-size: 30px;
+    color: black; 
+    font-family: 'Nunito', sans-serif;
+}
+
+.side-inner .profile .usertype {
+    font-size: 20px;
+    color: black; 
+}
+
+.side-inner .nav-menu ul li a {
+    color: black;
+    display: block;
+
+   
+}
+
+.side-inner .nav-menu .nav-item .active{
+    border: 1px solid black; 
+    padding: 5px;
+    color: #000; 
+    border-radius: 20px;
+}
+
+.side-inner .nav-menu ul li a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0px;
+    outline: #000;
+    opacity: 0;
+    visibility: hidden;
+}
+.side-inner .nav-menu ul li a:active, .side-inner .nav-menu ul li a:focus, .side-inner .nav-menu ul li a:hover {
+    outline: #000; 
+}
+.side-inner .nav-menu ul li a:hover {
+    border: 1px solid black; 
+    padding: 5px;
+    color: #000; 
+    border-radius: 20px;
+}
+.side-inner .nav-menu ul li a:hover:before {
+      width: 4px;
+      opacity: 1;
+      visibility: visible; 
+}
+
+.side-inner .nav-menu ul li.active a {
+    border: 1px solid black; 
+    padding: 5px;
+    color: #000; 
+    border-radius: 20px;
+}
+.side-inner .nav-menu ul li.active a:before {
+      opacity: 1;
+      visibility: visible;
+      width: 4px; 
+}
+
+.container{
+    margin-left: 45vh;
+    margin-right: 20vh;
+}
+
+
+.searchbar{
+    margin-top: 12vh;;
+}
+
+.form-control {
+    border-radius: 15px;
+}
+
+.categories{
+    margin-top: 3vh;
+    margin-left: 45vh;
+    margin-bottom: 3vh;
+}
+.card{
+    border: none;
+    box-shadow: 5px 4px 6px rgb(134, 132, 132);
+
+}
+
+.cardcontainer{
+    height: 325px;
+    width: 225px;
+
+}
+.card-img-top{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+} 
+
+.send-message{
+    transform: rotate(310deg);
+    fill: #FFB500;
+}
+
+.send-message:focus{
+    transform: rotate(310deg);
+    fill: #FFB500;
+    outline: none;
+    border: none;
+}
+.like-button {
+    color: #ccc;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.like-button.liked{
+    color: #FF2E2E;
+    opacity: 72%;
+}
+
+
+.adopt{
+    background-color: #8cc1fc;
+    text-transform: capitalize;
+    padding: 0 10px 0 10px;
+    border-radius: 15px;
+    color: white;
+}
+.adopt:hover{
+    background-color: #8cc1fc;
+    text-transform: capitalize;
+    border: 1px #000 solid;
+    color: white;
+}
+
+#notifications-dropdown:hover{
+    border: none;
+}
+#notifications-dropdown:focus{
+    border: none;
+}
+
+.antialiased {
+    background-image: url('/img/bg2.jpg');
+    background-size: cover;
+}
+.welcomerightdesign{
+    text-align: right;
+
+}
+
+.welcomepage{
+    margin: 8vh;
+    padding: 5vh;
+}
+
+.bannertext{
+    font-family: 'Chewy', cursive;
+    font-size: 80px;
+}
+
+.join-btn{
+    background-color: #FF2E2E;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 1vh 3vh 1vh 3vh;
+    border-radius: 25px;
+}
+
+.join-btn:hover{
+    background-color: #FF2E2E;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 1vh 3vh 1vh 3vh;
+    border-radius: 25px;
+    border: 2px #000 solid;
+}
+
+
+.post-btn{
+    background-color: none;
+}
+
+.post-btn:focus{
+    border: none;
+}
+
+#name, #animal_type, #gender, #age, #color, #description{
+    border-radius: 15px;
+    border: #948b8b solid 1px;
+    padding: 5px 8px 5px 8px;
+    margin-bottom: 1vh;
+    box-sizing: border-box;
+}
+
+.upload-btn{
+    background-color:  #8cc1fc;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 15px;
+    min-width: 100px; /* or any value that fits your design */
+    }
+    
+    .upload-btn:hover{
+    background-color: #8cc1fc;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 15px;
+    border: #000 solid 1px;;
+    }
+ 
+   
+.delete-btn{
+        background-color:  #FF2E2e;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 15px;
+        font-size: 15px;
+        min-width: 100px; /* or any value that fits your design */
+        }
+        
+        .delete-btn:hover{
+        background-color: #FF2E2e;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 15px;
+        font-size: 15px;
+        border: #000 solid 1px;;
+        }
+
+        
+       
+.hidden {
+    display: none;
+}
+
+.upload-text{
+    font-size: 12px;
+}
+
+.registerdesign{
+    background-color: #FFB500;
+}
+
+
+
+
+
+
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+  
+    position: relative;
+}
+
+.stepwizard-row::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #ccc;
+    z-index: -1;
+  }
+  
+  .stepwizard-step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.form-select{
+    border-radius: 15px;
+}
+
+.stepwizard-step.active,
+.stepwizard-step.completed {
+    color: #fff;
+    background-color: #ffa500; /* orange */
+    border-color: #ffa500; /* orange */
+}
+
+.btn-circle.active,
+.btn-circle.completed {
+    border-color: #ffa500; /* orange */
+    background-color: #ffa500; /* orange */
+    color: #fff;
+}
+
+
+.message-container{
+    margin-top: 100px;
+    margin-left: 350px;
+    margin-right: 50px;
+ 
+   
+}
+
+.side-message {
+    background-color: #FFFBF0;
+    width: 400px;
+    height: 87%;
+    z-index: -1;
+    position: fixed;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    
+}
+
+.convo{
+    background-color: #ccc;
+
+}
+
+.sender-profile{
+    height: 60px;
+    width: 60px;
+}
+
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.message-avatar {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.message-avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.message-content {
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.message-content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.message-time {
+    font-size: 10px;
+    color: #999;
+    margin-left: 3vh;
+}
+.main-message{
+    margin-top: 10vh;
+    margin-left: 44vh;
+ 
+}
+.topvarmessage{
+    background-color:#FFB500;
+    opacity: 75%;
+    width: 55%;
+    height: 9vh;
+    z-index: -1;
+    position: fixed;
+    border-top-right-radius: 10px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.message-icons {
+    position: absolute;
+    right: 0;
+  }
+
+
+
+.welcome-text{
+    margin-top: 23vh;
+    margin-left: 10vh;
+}
+
+.btnCategory button {
+    background-color: transparent;
+    border: 2px solid #8cc1fc;
+    border-radius: 10px;
+    color:#8cc1fc;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 5px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btnCategory button:hover {
+    background-color:#8cc1fc;
+    color: #fff;
+  }
+  
+  .btnCategory button.selected {
+    background-color:#8cc1fc;
+    color: #fff;
+  }
+  
+  .btnCategory button.selected:hover {
+    background-color:#8cc1fc;
+    color: #fff;
+  }
+
+  .pet-name{
+    color: #394889;
+    font-size: 50px;
+  }
+
+  .petdetails{
+    color: #394889;
+    align-items: center;
+  }
+
+  .pethr{
+    width: 100%;
+  }
+
+  .userprofile{
+    height: 10vh;
+    width:100%;
+    object-fit: cover;
+  }
+
+  .img-pet{
+    height:550px;
+  }
+
+
+
+.adoptform{
+    margin:2vh 20vh 2vh 20vh;
+    padding: 2vh 20vh 0 20vh;
+}
+
+
+.head{
+    background-color: #FFB500;
+    border-radius: 5vh 5vh 0 0;
+}
+
+#navbarDropdown::after {
+    display: none;
+  }
+
+.carousel-item{
+    margin-top: 3vh;
+  
+}
+
+.carousel-item img {
+    border-radius: 20px;
+    object-fit: contain;
+    background-repeat: no-repeat; 
+ 
+ 
+}
+
+.carousel-caption{
+    background: linear-gradient(to bottom,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 4%,rgba(255,255,255,0.5) 32%,rgba(255,255,255,1) 100%);
+    text-align: left;
+    width: 100%;
+}
+  
+.article{
+    margin: 5vh 0 3vh 0;
+}
+
+.headTitle{
+    color: #394889;
+    font-size: 35px;
+    
+}
+
+
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}
+
+.item{
+    object-fit: cover;
+}
+
+ .btn.dropdown-toggle::after {
+    display: none;
+  }
+  .dropdown-menu {
+    z-index: 9999;
+  }
+  
+  .article-content {
+    line-height: 1.5;
+  }
+
+  .welcome-page {
+    background-image: url('/img/landing page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    
+}
+
+.join {
+    margin-top: 7rem;
+  
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  
+  .pagination a {
+   
+    color: black;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  
