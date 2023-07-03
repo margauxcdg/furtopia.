@@ -54,7 +54,7 @@ class PetCareController extends Controller
     if ($image) {
         $filename = $image->getClientOriginalName();
         $image->move(public_path('img'), $filename);
-        $petCare->image = 'img/' . $filename; // save the path to the image in the database
+        $petCare->image = 'img/' . $filename; 
     } 
     
     $petCare->title = $request->input('title');

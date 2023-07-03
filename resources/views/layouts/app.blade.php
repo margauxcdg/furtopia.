@@ -81,6 +81,40 @@
 
         $('div.setup-panel div a.btn-primary').trigger('click');
         });
+        var home = window.location.href;
+        if (home.includes('/home')) {
+            var homeLink = document.querySelector('a[href="/home"]');
+            if (homeLink) {
+                homeLink.classList.add('active');
+            }
+        }
+
+        var petcare = window.locaton.href;
+        if(petcare.includes('/petcare')){
+            var petcareLink = document.querySelector('a[href="/petcare"]');
+            if(petcareLink){
+                petcareLink.classList.add('active');
+            }
+        }
+
+        var petgallery = window.locaton.href;
+        if(petgallery.includes('/petgallery')){
+            var petgalleryLink = document.querySelector('a[href="/petgallery"]');
+            if(petgalleryLink){
+                petgalleryLink.classList.add('active');
+            }
+        }
+
+        var petmanagement = window.locaton.href;
+        if(petmanagement.includes('/petmanagement')){
+            var petmanagementLink = document.querySelector('a[href="/petmanagement"]');
+            if(petmanagementLink){
+                petmanagementLink.classList.add('active');
+            }
+        }
+
+        
+        
     </script>
 </head>
 <body>
@@ -214,7 +248,7 @@
         <div class="nav-menu">
           <ul>
                 <li class="nav-item list-unstyled align-items-center">
-                    <a href="/home" class="nav-link {{request()->is('home') ? 'active' : ''}}"> 
+                    <a href="/home" class="nav-link {{request()->is('home*') ? 'active' : ''}}"> 
                         <svg width="24" height="24" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-3">
                             <path d="M3 9.5L12 4L21 9.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M19 13V19.4C19 19.7314 18.7314 20 18.4 20H5.6C5.26863 20 5 19.7314 5 19.4V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
@@ -224,7 +258,7 @@
                 </li>
                
                 <li class="nav-item list-unstyled allign-items-center">
-                        <a href="/petcare" class="nav-link {{request()->is('petcare') ? 'active' : ''}}"> 
+                        <a href="/petcare" class="nav-link {{request()->is('petcare*') ? 'active' : ''}}"> 
                         <svg fill="none" height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="me-3">
                             <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                                 <rect height="18" rx="2" width="18" x="3" y="3"/><path d="M3 7h18M7 11.5h10M7 16h6"/>
@@ -236,12 +270,12 @@
                 @if(Auth::check())
                     @if(Auth::user()->usertype == 'AnimalShelter')
                         <li class="nav-item list-unstyled allign-items-center">
-                            <a href="/petgallery" class="nav-link {{request()->is('petgallery') ? 'active' : ''}}"> 
+                            <a href="/petgallery" class="nav-link {{request()->is('petgallery*') ? 'active' : ''}}"> 
                                 <i class="nav-icon fas fa-image me-3"></i> Pet Gallery
                             </a>    
                         </li>
                         <li class="nav-item list-unstyled allign-items-center">
-                            <a href="/petmanagement"class="nav-link {{ request()->is('petmanagement') ? 'active' : ''}}">
+                            <a href="/petmanagement"class="nav-link {{ request()->is('petmanagement*') ? 'active' : ''}}">
                                 <i class="nav-icon fas fa-tasks me-3"></i> Applications
                             </a>
                         </li>

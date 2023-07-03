@@ -1,3 +1,6 @@
+@php
+    $isActive = request()->is('home');
+@endphp
 @extends('layouts.app')
 
 @section('content')
@@ -96,7 +99,7 @@
                     <div class="d-flex justify-content-end m-1">
                         @if(Auth::check())
                             @if(Auth::user()->usertype == 'Adopter')
-                                <a href="{{ route('adoptForm', ['pet_id' => $pets->id]) }}" class="btn adopt text-uppercase fw-bold" style="padding: 0 2vh 0 2vh; font-size:20px">Adopt!</a>
+                            <a href="{{ route('adoptForm', ['pet_id' => $pets->id]) }}" class="btn adopt text-uppercase fw-bold {{ $isActive ? 'active' : '' }}" style="padding: 0 2vh 0 2vh; font-size: 20px">Adopt!</a>
                             @elseif(Auth::user()->usertype == 'AnimalShelter' && $pets->user_id == Auth::user()->id)
                                 <div class="d-flex gap-2">
                                     <a href="/petgallery/edit/{{$pets['id'] }}" class="btn adopt text-uppercase fw-bold" style="padding: 0 2vh 0 2vh; font-size:20px">Edit</a>

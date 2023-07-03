@@ -72,9 +72,6 @@ class PetController extends Controller
             'image' => $filename,
             'user_id' => $user->id,
         ]);
-
-       // $adopters = User::where('usertype', 'adopter')->get();
-       // Notification::send($adopters, new NewPetPosted($pets));
     
         return redirect()->route('petgallery.index')->with('success', 'Pet added successfully');
     }

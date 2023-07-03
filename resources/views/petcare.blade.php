@@ -3,10 +3,11 @@
 @section('content')
 <div class="container">
     <!--Search Bar-->
+    <!--
     <div class="searchbar">
         <div class="row justify-content-end">
           <div class="col-sm-5">
-            <form class="d-flex"action="{{ route('searchresults') }}" method="GET">
+            <form class="d-flex"action="{{ route('searchpetcare') }}" method="GET">
               <input class="form-control ms-2" name="query" type="search" placeholder="Search..." aria-label="Search">
               <button class="search btn" type="submit">
                 <svg fill="none" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -20,7 +21,7 @@
           </div>
         </div>
       </div>
-
+    -->
 
     <div class="ctgry">
       <div class="carousel">
@@ -53,7 +54,7 @@
             @if(Auth::check())
               @if(Auth::user()->usertype == 'AnimalShelter')
                 <div style="position: fixed; bottom: 20px; right: 20px;">
-                  <a href="/petcare/addArticle" style="color: white; background-color: #8cc1fc; padding: 5px; border-radius: 5px; text-decoration: none; font-size: 15px;">
+                  <a href="/petcare/addArticle" style="color: white; background-color: #8cc1fc; padding: 5px; border-radius: 10px; text-decoration: none; font-size: 15px;">
                     <i class="fas fa-plus-circle"></i>
                   Add Article</a>
                 </div>
@@ -86,7 +87,7 @@
                         @endif
                         <div style="position: absolute; bottom: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 10px; width: 100%; border-radius: 0 0 10px 10px;">
                           <h2 style="margin: 0; color: white">{{ $petCare->title }}</h2>
-                          <a href="{{ route('article', ['id' => $petCare->id]) }}" style="color: white; background-color: #8cc1fc; padding: 5px; border-radius: 5px; text-decoration: none; font-size: 15px">Read More</a>
+                          <a href="{{ route('article', ['id' => $petCare->id]) }}" style="color: white; background-color: #8cc1fc; padding: 5px; border-radius: 10px; text-decoration: none; font-size: 15px">Read More</a>
                         </div>
                       </div>
                       

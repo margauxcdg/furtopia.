@@ -80,7 +80,7 @@
 
                     <div class="row md-8">
                         <div class="col-md-9 mt-4 text-center">
-                            <button type="submit" class="btn reg-btn text-uppercase fs-5 fw-bold text-white px-3 py-2">
+                            <button type="submit" class="btn reg-btn fw-bold text-white px-3 py-2">
                                 {{ __('Login') }}
                             </button>
                         </div>

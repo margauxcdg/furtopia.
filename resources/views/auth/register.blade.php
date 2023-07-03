@@ -169,7 +169,7 @@
                                             </div>
                                         </div>
                                         <div class="row md-10">
-                                            <div class="col-md-10 mt-4 pr-0 mr-0 d-flex justify-content-end">
+                                           <div class="col-md-10 mt-4 pr-0 mr-0 d-flex justify-content-end"> 
                                                 <div class="col-md-10 mt-4 pr-0 mr-0 d-flex justify-content-end">
                                                     <button type="button" class="btn btn-primary nextBtn btn-lg" style="background-color: #8cc1fc; border:none" id="nextBtn">
                                                         {{ __('Next') }}
@@ -434,7 +434,7 @@
                     </div>
                 </div>  
                 <div class="col-md-6">
-                    <div class="registerdesign d-flex align-items-center no" style="background-image: url('{{asset('img/BG Paws.png')}}');">
+                    <div class="registerdesign d-flex align-items-center no" style="background-image: url('{{asset('img/BG Paws.png')}}')";>
                         <img src="{{asset('img/Reg-Dog.png')}}" class="img-fluid d-flex vh-100"style="object-fit: cover; text-align:center">
                         
                     </div>

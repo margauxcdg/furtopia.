@@ -39,26 +39,20 @@ class AdoptionController extends Controller
             'pet_id' => 'required',
         ]);
     
-        // Create a new Adoption instance
         $adoption = new Adoption;
     
-        // Set the values of the adoption record
         $adoption->fullname = $request->fullname;
         $adoption->email = $request->email;
         $adoption->phone_number = $request->phone_number;
         $adoption->address = $request->address;
-    
-        // Retrieve the pet associated with the adoption record
+
         $pet = Pet::find($validatedData['pet_id']);
     
-        // Set the pet name and age
         $adoption->pet_name = $pet->name;
         $adoption->pet_age = $pet->age;
     
-        // Save the adoption record
         $adoption->save();
-    
-        // Redirect to the pet details page
+ 
         return redirect()->route('pet.show', $validatedData['pet_id']);
     }
 
