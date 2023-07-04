@@ -8,7 +8,7 @@ runtime_config:
 handlers:
   - url: /(.*\.(gif|png|jpg|css|js))$
     static_files: public/\1
-    upload: public/.*\.(gif|png|jpg|css|js)$
+    upload: public/img\.(gif|png|jpg|css|js)$
   - url: /.*
     secure: always
     redirect_http_response_code: 301
